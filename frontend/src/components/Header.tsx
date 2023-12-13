@@ -6,6 +6,7 @@ interface Headerprops {
   account: string;
   setAccount: Dispatch<SetStateAction<string>>;
 }
+
 const Header: FC<Headerprops> = ({ account, setAccount }) => {
   const { sdk } = useSDK();
 
