@@ -2,12 +2,12 @@ import { useSDK } from "@metamask/sdk-react";
 import { Dispatch, FC, SetStateAction } from "react";
 import { Link } from "react-router-dom";
 
-interface Headerprops {
+interface HeaderProps {
   account: string;
   setAccount: Dispatch<SetStateAction<string>>;
 }
 
-const Header: FC<Headerprops> = ({ account, setAccount }) => {
+const Header: FC<HeaderProps> = ({ account, setAccount }) => {
   const { sdk } = useSDK();
 
   const onClickMetaMask = async () => {

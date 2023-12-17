@@ -13,7 +13,7 @@ root.render(
     <MetaMaskProvider
       sdkOptions={{
         dappMetadata: {
-          name: "PFP Project p",
+          name: "PFP Project",
           url: window.location.host,
         },
       }}
